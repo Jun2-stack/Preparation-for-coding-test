@@ -9,12 +9,12 @@ int main()
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == '(')
+		if (str[i] == '(') // 왼쪽 괄호
 			count++;
-		else
+		else // 오른쪽 괄호
 			count--;
 	}
-	if (str[i-1] == '(')
+	if (str[i-1] == '(') // 마지막 괄호 확인
 	{
 		printf("NO");
 		return 0;
