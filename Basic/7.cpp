@@ -9,13 +9,13 @@ int main()
 
 	for (i = 0; virus[i] != '\0'; i++)
 	{
-		if (virus[i] == ' ')
+		if (virus[i] == ' ') // 공백 탐지
 			continue;
 		else
 		{
 			if (virus[i] >= 65 && virus[i] <= 90)
 			{
-				origin[j] = virus[i] + 32;
+				origin[j] = virus[i] + 32; // 소문자로 변환
 			}
 			else
 				origin[j] = virus[i];
