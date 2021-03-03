@@ -9,7 +9,7 @@ int main()
 
 	scanf_s("%s", &input, sizeof(input));
 
-	for (i = 0; input[i] !='\0'; i++) // ¼ıÀÚ¸¸ ÃßÃâ
+	for (i = 0; input[i] !='\0'; i++) // ìˆ«ìë§Œ ì¶”ì¶œ
 	{
 		if (input[i] >= 48 && input[i] <= 57)
 		{
@@ -17,10 +17,10 @@ int main()
 			j++;
 		}
 	}
-	NN = atoi(temp); // Á¤¼ö·Î º¯È¯
+	NN = atoi(temp); // ì •ìˆ˜ë¡œ ë³€í™˜
 	printf("%d\n", NN);
 
-	for (i = 1; i <= NN; i++) // ¾à¼ö ±¸ÇÏ±â
+	for (i = 1; i <= NN; i++) // ì•½ìˆ˜ êµ¬í•˜ê¸°
 	{
 		if (NN % i == 0)
 		{
