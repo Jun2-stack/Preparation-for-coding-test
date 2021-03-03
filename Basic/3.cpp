@@ -13,7 +13,7 @@ int main()
 		if (N % i == 0)
 		{
 			sum = sum + i;
-			cout << "+" << i;
+			cout << "+" << i; // 진약수 출력
 		}
 	}
 	cout << "=" << sum;
