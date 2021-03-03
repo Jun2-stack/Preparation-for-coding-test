@@ -12,11 +12,11 @@ int main()
 		cin >> age;
 		if (MIN > age)
 		{
-			MIN = age;
+			MIN = age; // 최소 나이
 		}
 		if (MAX < age)
 		{
-			MAX = age;
+			MAX = age; // 최대 나이
 		}
 	}
 	
