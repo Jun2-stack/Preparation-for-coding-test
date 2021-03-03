@@ -11,11 +11,11 @@ int main()
 		sum = sum + i;
 		if(i!=B)
 		{
-			cout << i << "+"; // 주어진 마지막 자연수 전까지
+			cout << i << "+"; // A ~ B 
 		}
 		else
 		{
-			cout << i << "="; // 주어진 마지막 자연수일 때
+			cout << i << "="; // B일 
 		}
 	}
 	cout << sum;
