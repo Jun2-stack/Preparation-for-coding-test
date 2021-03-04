@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int digit_sum(int x)
+int digit_sum(int x) // 자릿수의 합 계산 함수
 {
 	int tmp, sum = 0;
 	while (x > 0)
@@ -22,12 +22,12 @@ int main()
 	{
 		scanf_s("%d", &num);
 		sum = digit_sum(num);
-		if (sum > max)
+		if (sum > max) // 자릿수의 합이 최댓값인 수 저장
 		{
 			max = sum;
 			res = num;
 		}
-		else if (sum == max)
+		else if (sum == max) // 자릿수의 합의 같다면 큰 수 저장
 			if (num > res)
 				res = num;
 	}
