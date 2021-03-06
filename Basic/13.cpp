@@ -13,7 +13,7 @@ int main()
 
 	strcpy_s(Num, sizeof(Num), N.c_str());
 
-	for (; Num[i] != '\0'; i++)
+	for (; Num[i] != '\0'; i++) // 자릿수의 숫자 판별 및 카운트
 	{
 		if (Num[i] == '0')
 			arr[0]++;
@@ -36,7 +36,7 @@ int main()
 		else if (Num[i] == '9')
 			arr[9]++;
 	}
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++) // 가장 많이 사용된 숫자 판별
 	{
 		if (MAX <= arr[i])
 		{
